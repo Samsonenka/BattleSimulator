@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Battle Simulator</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+</head>
+<div class="center">
+    <form th:action="@{/createBattle}" method="post">
+        <div><input type="text" name="spearFighterOffense" value="0"></div>
+        <div><input type="text" name="spearFighterDefense" value="0"></div>
+        <div><input type="submit" value="Ok"></div>
+    </form>
+</div>
+
+</body>
+</html>
