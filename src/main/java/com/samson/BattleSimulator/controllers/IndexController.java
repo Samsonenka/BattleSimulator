@@ -24,7 +24,7 @@ public class IndexController {
         List<SpearFighter> spearFighterOffenseList = SpearFighter.createArmy(spearFighterOffense);
         List<SpearFighter> spearFighterDefenseList = SpearFighter.createArmy(spearFighterDefense);
 
-        System.out.println(spearFighterOffenseList.size() + " " + spearFighterDefenseList.size());
+        SpearFighter.battle(spearFighterOffenseList, spearFighterDefenseList);
 
         return "index";
     }

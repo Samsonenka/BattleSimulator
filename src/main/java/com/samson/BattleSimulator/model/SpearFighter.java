@@ -24,6 +24,27 @@ public class SpearFighter {
         return spearFighterList;
     }
 
+    public static void battle(List<SpearFighter> spearFighterOffenseList, List<SpearFighter> spearFighterDefenseList){
+
+        int offense = 0;
+        int defense = 0;
+
+        for (SpearFighter spearFighter1: spearFighterOffenseList) {
+            offense += spearFighter1.getOffensiveStrength();
+        }
+
+        for (SpearFighter spearFighter2: spearFighterDefenseList){
+            defense += spearFighter2.getGeneralDefense();
+        }
+
+        if (offense > defense){
+            System.out.println("Offense: " + offense + " " + "Defense: " + defense);
+            System.out.println("Крепость захвачена!!!");
+        }
+            else
+            System.out.println("Оборона сдержала атаку!");
+    }
+
     public int getOffensiveStrength() {
         return OffensiveStrength;
     }
