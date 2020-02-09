@@ -1,19 +1,35 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Battle Simulator</title>
-    <link rel="stylesheet" type="text/css" href="css.css">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
 </head>
-<div class="center">
-    <form th:action="@{/createBattle}" method="post">
-
-        <div><div class="ico"></div><input type="text" name="spearFighterOffense" value="0"></div>
-        <div><input type="text" name="spearFighterDefense" value="0"></div>
-        <div><input type="submit" value="Ok"></div>
-    </form>
-</div>
-
+<body>
+    <div id="content">
+        <div>
+            <form th:action="@{/createBattle}" method="post">
+                <table>
+                    <tr id="tableHead">
+                        <th></th>
+                        <th>Attacker</th>
+                        <th>Defender</th>
+                    </tr>
+                    <tr>
+                        <td class="description"><img src="https://dsus.innogamescdn.com/asset/8edf6f3/graphic/unit/unit_spear.png"><a href="#">Spear fighter</a></td>
+                        <td><input required type="text" value="0" name="spearFighterAttacker"></td>
+                        <td><input required type="text" value="0" name="spearFighterDefender"></td>
+                    </tr>
+                    <tr>
+                        <td class="description"><img src="https://dsus.innogamescdn.com/asset/8edf6f3/graphic/unit/unit_sword.png"><a href="#">Swordsman</a></td>
+                        <td><input required type="text" value="0" name="swordsmanAttacker"></td>
+                        <td><input required type="text" value="0" name="swordsmanDefender"></td>
+                    </tr>
+              </table>
+              <input id="button" type="submit" value="Calculate">
+            </form>
+        </div>
+    </div>
 </body>
 </html>

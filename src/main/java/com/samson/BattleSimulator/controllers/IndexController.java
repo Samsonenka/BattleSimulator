@@ -19,10 +19,10 @@ public class IndexController {
     }
 
     @PostMapping("/createBattle")
-    public String createBattle(@RequestParam int spearFighterOffense, @RequestParam int spearFighterDefense){
+    public String createBattle(@RequestParam int spearFighterAttacker, @RequestParam int spearFighterDefender){
 
-        List<SpearFighter> spearFighterOffenseList = SpearFighter.createArmy(spearFighterOffense);
-        List<SpearFighter> spearFighterDefenseList = SpearFighter.createArmy(spearFighterDefense);
+        List<SpearFighter> spearFighterOffenseList = SpearFighter.createArmy(spearFighterAttacker);
+        List<SpearFighter> spearFighterDefenseList = SpearFighter.createArmy(spearFighterDefender);
 
         SpearFighter.battle(spearFighterOffenseList, spearFighterDefenseList);
 
