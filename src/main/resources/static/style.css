@@ -67,3 +67,8 @@ input{
     width: 50%;
     margin-left: 2px;
 }
+
+select{
+    width: 53%;
+    margin-left: 2px;
+}

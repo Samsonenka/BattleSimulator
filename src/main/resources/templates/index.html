@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
 
@@ -25,6 +26,49 @@
                         <td class="description"><img src="https://dsus.innogamescdn.com/asset/8edf6f3/graphic/unit/unit_sword.png"><a href="#">Swordsman</a></td>
                         <td><input required type="text" value="0" name="swordsmanAttacker"></td>
                         <td><input required type="text" value="0" name="swordsmanDefender"></td>
+                    </tr>
+                    <tr>
+                        <td class="description"><img src="https://dsus.innogamescdn.com/asset/aea668f/graphic/unit/unit_axe.png"><a href="#">Axeman</a></td>
+                        <td><input required type="text" value="0" name="axemanAttacker"></td>
+                        <td><input required type="text" value="0" name="axemanDefender"></td>
+                    </tr>
+                    <tr>
+                        <td class="description"><img src="https://dsus.innogamescdn.com/asset/aea668f/graphic/unit/unit_light.png"><a href="#">Light cavalry</a></td>
+                        <td><input required type="text" value="0" name="lightCavalryAttacker"></td>
+                        <td><input required type="text" value="0" name="lightCavalryDefender"></td>
+                    </tr>
+                    <tr>
+                        <td class="description"><img src="https://dsus.innogamescdn.com/asset/aea668f/graphic/unit/unit_heavy.png"><a href="#">Heavy cavalry</a></td>
+                        <td><input required type="text" value="0" name="heavyCavalryAttacker"></td>
+                        <td><input required type="text" value="0" name="heavyCavalryDefender"></td>
+                    </tr>
+                    <tr>
+                        <td class="description"><img src="https://dsus.innogamescdn.com/asset/aea668f/graphic/unit/unit_ram.png"><a href="#">Ram</a></td>
+                        <td><input required type="text" value="0" name="ramAttacker"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="description"><img src="https://dsus.innogamescdn.com/asset/aea668f/graphic/unit/unit_knight.png"><a href="#">Paladin</a></td>
+                        <td><input required type="text" value="0" name="paladinAttacker"></td>
+                        <td><input required type="text" value="0" name="paladinDefender"></td>
+                    </tr>
+                    <tr>
+                        <td class="description"><img src="https://dsus.innogamescdn.com/asset/aea668f/graphic/buildings/wall.png"><a href="#">Wall</a></td>
+                        <td></td>
+                        <td><select name="wallDefender">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                          </select>
+                        </td>
                     </tr>
               </table>
               <input id="button" type="submit" value="Calculate">

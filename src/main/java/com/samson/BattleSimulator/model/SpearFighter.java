@@ -1,27 +1,16 @@
 package com.samson.BattleSimulator.model;
 
-import java.util.ArrayList;
+import com.samson.BattleSimulator.repos.ActionWarrior;
+
 import java.util.List;
 
-public class SpearFighter {
+public class SpearFighter implements ActionWarrior {
 
     private int OffensiveStrength = 10;
     private int GeneralDefense = 15;
     private int CavalryDefense = 45;
 
     public SpearFighter() {
-    }
-
-    public static List<SpearFighter> createArmy(int quantityUnits){
-
-        List<SpearFighter> spearFighterList = new ArrayList<>();
-
-        if (quantityUnits != 0){
-            for (int i = 0; i < quantityUnits; i++) {
-                spearFighterList.add(new SpearFighter());
-            }
-        }
-        return spearFighterList;
     }
 
     public static void battle(List<SpearFighter> spearFighterOffenseList, List<SpearFighter> spearFighterDefenseList){
