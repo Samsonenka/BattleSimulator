@@ -4,10 +4,25 @@ import com.samson.BattleSimulator.repos.ActionWarrior;
 
 public class Axeman implements ActionWarrior {
 
-    private int OffensiveStrength = 40;
-    private int GeneralDefense = 10;
-    private int CavalryDefense = 5;
+    private int attack = 6;
+    private int defense = 2;
 
     public Axeman() {
+    }
+
+    public int getAttack() {
+        return attack;
+    }
+
+    public void setAttack(int attack) {
+        this.attack = attack;
+    }
+
+    public int getDefense() {
+        return defense;
+    }
+
+    public void setDefense(int defense) {
+        this.defense = defense;
     }
 }

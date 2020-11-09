@@ -7,7 +7,7 @@ import java.util.List;
 
 public interface ActionWarrior {
 
-    default List<SpearFighter> createArmy(int quantityUnits){
+    static List<SpearFighter> createArmy(int quantityUnits){
 
         List<SpearFighter> spearFighterList = new ArrayList<>();
 

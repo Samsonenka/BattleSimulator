@@ -1,6 +1,7 @@
 package com.samson.BattleSimulator.controllers;
 
 import com.samson.BattleSimulator.model.SpearFighter;
+import com.samson.BattleSimulator.repos.ActionWarrior;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -22,12 +23,7 @@ public class IndexController {
     public String createBattle(@RequestParam int spearFighterAttacker, @RequestParam int spearFighterDefender,
                                @RequestParam int wallDefender){
 
-        List<SpearFighter> spearFighterOffenseList = SpearFighter.createArmy(spearFighterAttacker);
-        List<SpearFighter> spearFighterDefenseList = SpearFighter.createArmy(spearFighterDefender);
 
-        SpearFighter.battle(spearFighterOffenseList, spearFighterDefenseList);
-
-        System.out.println("Wall: " + wallDefender);
 
         return "index";
     }

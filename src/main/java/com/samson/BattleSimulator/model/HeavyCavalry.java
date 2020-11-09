@@ -4,10 +4,25 @@ import com.samson.BattleSimulator.repos.ActionWarrior;
 
 public class HeavyCavalry implements ActionWarrior {
 
-    private int OffensiveStrength = 150;
-    private int GeneralDefense = 200;
-    private int CavalryDefense = 80;
+    private int attack = 8;
+    private int defense = 7;
 
     public HeavyCavalry() {
+    }
+
+    public int getAttack() {
+        return attack;
+    }
+
+    public void setAttack(int attack) {
+        this.attack = attack;
+    }
+
+    public int getDefense() {
+        return defense;
+    }
+
+    public void setDefense(int defense) {
+        this.defense = defense;
     }
 }

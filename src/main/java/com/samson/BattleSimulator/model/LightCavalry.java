@@ -4,10 +4,25 @@ import com.samson.BattleSimulator.repos.ActionWarrior;
 
 public class LightCavalry implements ActionWarrior {
 
-    private int OffensiveStrength = 130;
-    private int GeneralDefense = 30;
-    private int CavalryDefense = 40;
+    private int attack = 8;
+    private int defense = 3;
 
     public LightCavalry() {
+    }
+
+    public int getAttack() {
+        return attack;
+    }
+
+    public void setAttack(int attack) {
+        this.attack = attack;
+    }
+
+    public int getDefense() {
+        return defense;
+    }
+
+    public void setDefense(int defense) {
+        this.defense = defense;
     }
 }
